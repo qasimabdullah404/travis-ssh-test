@@ -4,4 +4,5 @@ arch: amd64
 dist: xenial
 script: true
 after_success:
-  - echo $helloWorld
+  - hello = $helloWorld
+  - echo $hello
