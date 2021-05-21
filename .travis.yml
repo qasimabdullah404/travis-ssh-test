@@ -6,7 +6,7 @@ script: true
 after_success:
   - echo Testing Out SSH
   - echo Loging to server...
-  - sudo apt-get install -y sshpass
+  - sudo apt-get install sshpass
   - sshpass -p $sshPassword ssh qasim@tty.sdf.org
   - echo Logged to server
   - pwd
